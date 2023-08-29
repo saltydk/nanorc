@@ -7,7 +7,7 @@ if [ ! "$(command -v unzip)" ]; then
 fi
 
 _fetch_sources(){
-  wget -O /tmp/nanorc.zip https://github.com/scopatz/nanorc/archive/master.zip
+  curl https://github.com/scopatz/nanorc/archive/master.zip --output /tmp/nanorc.zip
   mkdir -p ~/.nano/
 
   cd ~/.nano/ || exit
